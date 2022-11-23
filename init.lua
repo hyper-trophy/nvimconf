@@ -15,7 +15,6 @@ map("n", "<F7>", ":w<cr>:!run.bat<cr>", {})
 map("n", "<F8>", ":w<cr><C-w>s<C-w>j:term<cr>irun.bat<cr>", {})
 
 ---- barbar keymaps ----
-local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- Move to previous/next
