@@ -1,6 +1,5 @@
 call plug#begin()
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	Plug 'dense-analysis/ale'
 	Plug 'OmniSharp/omnisharp-vim'
 	Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
