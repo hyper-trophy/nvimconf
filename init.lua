@@ -334,14 +334,14 @@ local alpha = require("alpha")
 local dashboard = require("alpha.themes.startify")
 dashboard.section.header.val = {
 
-  "                                          ",
-  "██████╗ ██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗",
-  "██╔══██╗██║╚██╗██╔╝██║   ██║██║████╗ ████║",
-  "██████╔╝██║ ╚███╔╝ ██║   ██║██║██╔████╔██║",
-  "██╔══██╗██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║",
-  "██║  ██║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║",
-  "╚═╝  ╚═╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝",
-  "                                          ",
+" ___       ________  ________  ________  ___  ___  ___  ________   ___  ___     ___    ___ ",
+"|\\  \\     |\\   __  \\|\\   __  \\|\\   ____\\|\\  \\|\\  \\|\\  \\|\\   ___  \\|\\  \\|\\  \\   |\\  \\  /  /|",
+"\\ \\  \\    \\ \\  \\|\\  \\ \\  \\|\\  \\ \\  \\___|\\ \\  \\\\\\  \\ \\  \\ \\  \\\\ \\  \\ \\  \\\\\\  \\  \\ \\  \\/  / /",
+" \\ \\  \\    \\ \\   __  \\ \\   _  _\\ \\_____  \\ \\   __  \\ \\  \\ \\  \\\\ \\  \\ \\  \\\\\\  \\  \\ \\    / / ",
+"  \\ \\  \\____\\ \\  \\ \\  \\ \\  \\\\  \\\\|____|\\  \\ \\  \\ \\  \\ \\  \\ \\  \\\\ \\  \\ \\  \\\\\\  \\  /     \\/  ",
+"   \\ \\_______\\ \\__\\ \\__\\ \\__\\\\ _\\ ____\\_\\  \\ \\__\\ \\__\\ \\__\\ \\__\\\\ \\__\\ \\_______\\/  /\\   \\  ",
+"    \\|_______|\\|__|\\|__|\\|__|\\|__|\\_________\\|__|\\|__|\\|__|\\|__| \\|__|\\|_______/__/ /\\ __\\ ",
+"                                 \\|_________|                                  |__|/ \\|__| ",
 }
 
 alpha.setup(dashboard.opts)
@@ -395,15 +395,15 @@ cmp.setup {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
     },
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
+    -- ['<Tab>'] = cmp.mapping(function(fallback)
+    --   if cmp.visible() then
+    --     cmp.select_next_item()
+    --   elseif luasnip.expand_or_jumpable() then
+    --     luasnip.expand_or_jump()
+    --   else
+    --     fallback()
+    --   end
+    -- end, { 'i', 's' }),
     ['<S-Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
